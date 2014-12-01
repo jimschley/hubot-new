@@ -165,8 +165,8 @@ class Slack extends Adapter
     self.robot.router.get "/hubot/test", (req, res) ->
       self.log "Test request received"
 
-    res.end "success"
-    
+      res.end "success"
+
     # Listen to incoming webhooks from slack
     self.robot.router.post "/hubot/slack-webhook", (req, res) ->
       self.log "Incoming message received"
